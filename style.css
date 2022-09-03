@@ -42,6 +42,7 @@ body {
   padding-bottom: 40px;
   margin: 0 2rem;
 }
+
 .content {
   display: flex;
   align-items: center;
@@ -140,12 +141,19 @@ body {
 }
 
 .attribution {
-  font-size: 11px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 1rem;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var('--soft-magenta');
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -177,5 +185,12 @@ body {
     text-align: center;
     margin-top: 25px;
     padding: 50px;
+  }
+
+  .attribution {
+    font-size: 11px;
+    margin-top: 100%;
+    top: 100%;
+    padding-bottom: 0;
   }
 }
